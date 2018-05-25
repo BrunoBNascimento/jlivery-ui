@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+$red: #D54535;
+
+body, html, .app-root, .content{
+  height: 100%;
+  background: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+
+  p{
+    color:white;
+    text-align: center;
+  }
+}
+body::selection{
+  background: #D54535;
+}
+.splashscreen{
+  background: $red;
+  height:100%;
+  width:100%;
+}
+.clear{
+  clear:both;
+}

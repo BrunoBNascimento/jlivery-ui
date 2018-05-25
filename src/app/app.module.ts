@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RoutingModule } from './core/modules/routing.module';
 
-import { AppComponent } from './app.component';
+import { JliveryComponent } from './jlivery.component';
+import { ProductsComponent } from './modules/products';
+import { SplashScreenComponent } from './core/presentational/splashscreen';
 
 @NgModule({
   declarations: [
-    AppComponent
+    JliveryComponent,
+    ProductsComponent,
+    SplashScreenComponent
   ],
   imports: [
+    RoutingModule,
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [JliveryComponent]
 })
 export class AppModule { }
