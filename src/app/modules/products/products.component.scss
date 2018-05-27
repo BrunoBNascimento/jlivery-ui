@@ -1,43 +1,15 @@
-$red: #D54535;
-$watermelon: #ff4757;
-$light-gray: #ecf0f1;
+@import '~src/variables.scss';
 
-#header{
-  background: $red;
-  width:100%;
-  min-height: 50px;
-
-  &--logo{
-    width:100px;
-    height:30px;
-    margin-left: 10px;
-    margin-top: 5px;
+.content{
+  &__card{
+    height:auto;
   }
 }
 
-.footer{
-  background: $red;
-  position:absolute;
-  bottom:0;
-  width:100%;
-}
-
-.searchBox{
-  min-height: 40px;
-  padding:5px 0;
-  border-bottom: $light-gray 1px solid;
-
-  &--searchInput{
-    border-radius:25px;
-    min-width:80%;
-    min-height: 30px;
-    margin:0 10%;
-    border: none;
-    padding:10px;
-    box-sizing: border-box;
-    background: $light-gray;
-  }
-  &--searchInput:focus{
-    outline: none;
+.card{
+  &__price{
+    font-weight: bold;
+    font-size:18px;
+    color: $red;
   }
 }

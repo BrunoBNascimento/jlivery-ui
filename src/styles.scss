@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-$red: #D54535;
+@import './variables.scss';
 
-body, html, .app-root, .content{
+body, html{
   height: 100%;
   background: #ffffff;
   font-family: 'Ubuntu', sans-serif;
@@ -22,4 +22,22 @@ body::selection{
 }
 .clear{
   clear:both;
+}
+
+.main{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content{
+  &__card{
+    width: 100%;
+    min-height: 80px;
+    border-bottom: $light-gray 1px solid;
+    display: flex;
+    padding:5px;
+    box-sizing: border-box;
+  }
 }

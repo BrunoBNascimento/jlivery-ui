@@ -14,7 +14,7 @@ export class SplashScreenComponent {
     private router: Router
   ) {
     setTimeout(() => {
-      return this.router.navigate(['/products']);
+      return this.router.navigate(['/restaurants']);
     }, 5000);
   }
 }

@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { JliveryComponent } from '../../jlivery.component';
 import { ProductsComponent } from '../../modules/products';
+import { RestaurantsComponent } from './../../modules/restaurants/restaurants.component';
 import { SplashScreenComponent } from '../presentational/splashscreen';
 
 const ROUTES: Routes = [
-    { path: '', component: JliveryComponent, pathMatch: 'full'},
-    { path: 'splashscreen', component: SplashScreenComponent, pathMatch: 'full'},
-    { path: 'products', component: ProductsComponent, pathMatch: 'full'},
+    { path: '', component: JliveryComponent, data: { page: 'home' }, pathMatch: 'full'},
+    { path: 'splashscreen', component: SplashScreenComponent, data: { page: 'splashscreen' }, pathMatch: 'full'},
+    { path: 'products', component: ProductsComponent, data: { page: 'products' }, pathMatch: 'full'},
+    { path: 'restaurants', component: RestaurantsComponent, data: { page: 'restaurants' }, pathMatch: 'full'},
     { path: '**', redirectTo: '/' }
 ];
 

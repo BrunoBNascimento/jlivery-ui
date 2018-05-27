@@ -1,15 +1,10 @@
-<div id="header">
-
-</div>
-
-<div class="searchBox">
-  <input type="text" class="searchBox--searchInput" placeholder="Pesquisar produtos...">
-</div>
-
 <div class="content">
-  <div class="content--card"></div>
-</div>
-
-<div class="footer">
-
+  <div class="content__card" *ngFor="let product of products">
+    <div class="card__content">
+      <h5>{{ product.name }}</h5>
+      <span class="card__price">
+        {{ product.price }}
+      </span>
+    </div>
+  </div>
 </div>

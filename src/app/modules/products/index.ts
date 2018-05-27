@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
-  title = 'app';
+  title = 'Produtos';
+  products = [
+    { name: 'Feijoada da mamãe', price: 19.99, img: 'http://www.baratocoletivo.com.br/static/teamb/2016/1028/oferta_14776875143013.jpg' }
+  ];
 }

@@ -1,0 +1,21 @@
+@import '~src/variables.scss';
+
+.searchBox{
+  min-height: 40px;
+  padding:5px 0;
+  border-bottom: $light-gray 1px solid;
+
+  &__searchInput{
+    border-radius:25px;
+    min-width:80%;
+    min-height: 30px;
+    margin:0 10%;
+    border: none;
+    padding:10px;
+    box-sizing: border-box;
+    background: $light-gray;
+  }
+  &__searchInput:focus{
+    outline: none;
+  }
+}

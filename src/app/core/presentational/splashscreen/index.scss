@@ -1,6 +1,6 @@
 .splashscreen{
   $logo-height: 100px;
-  &--splashScreenText {
+  &__splashScreenText {
     font-size:35px;
     font-weight:bold;
     color:white;
@@ -9,15 +9,15 @@
     height: $logo-height;
     margin-top: -50px;
     width:100%;
-   
+
     -webkit-animation: jump 1.5s ease 0s infinite normal;
     animation: jump 1.5s ease 0s infinite normal;
-  
+
     p{
       text-align: center;
     }
    }
-  &--subLogo{
+  &__subLogo{
     font-style: italic;
     position: absolute;
     top: calc(50% + 50px);
@@ -30,7 +30,7 @@
     }
    }
 }
- 
+
  @-webkit-keyframes jump {
    0%{
    -webkit-transform: translateY(0);
@@ -61,7 +61,7 @@
    transform: translateY(0);
    }
  }
- 
+
  @keyframes jump {
    0%{
    transform: translateY(0);

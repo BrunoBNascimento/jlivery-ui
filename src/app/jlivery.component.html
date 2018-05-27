@@ -1,1 +1,3 @@
-<router-outlet></router-outlet>
+<div class="main" [@routerTransition]="getPage(appOutlet)">
+  <router-outlet #appOutlet="outlet"></router-outlet>
+</div>
