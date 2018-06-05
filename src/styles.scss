@@ -41,3 +41,61 @@ body::selection{
     box-sizing: border-box;
   }
 }
+
+.content{
+  &__restaurant-avatar{
+    margin:0 10px 0 0;
+    max-width: 90px;
+    max-height: 90px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &__restaurant-image{
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.card{
+  &__price{
+    font-weight: bold;
+    font-size:18px;
+    color: $red;
+  }
+}
+
+.header{
+  background: $red;
+  width:100%;
+  min-height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  color: white;
+  text-align: center;
+  &__logo{
+    width:100px;
+    height:30px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+}
+
+.searchBox{
+  min-height: 40px;
+  padding:5px 0;
+  border-bottom: $light-gray 1px solid;
+
+  &__searchInput{
+    border-radius:25px;
+    min-width:80%;
+    min-height: 30px;
+    margin:0 10%;
+    border: none;
+    padding:10px;
+    box-sizing: border-box;
+    background: $light-gray;
+  }
+  &__searchInput:focus{
+    outline: none;
+  }
+}

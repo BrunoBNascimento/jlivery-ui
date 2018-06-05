@@ -7,8 +7,8 @@ import { JliveryComponent } from './jlivery.component';
 import { ProductsComponent } from './modules/products';
 import { SplashScreenComponent } from './core/presentational/splashscreen';
 import { RestaurantsComponent } from './modules/restaurants/restaurants.component';
-import { HeaderComponent } from './core/presentational/header/header.component';
-import { SearchboxComponent } from './core/presentational/searchbox/searchbox.component';
+import { OptionalsComponent } from './modules/optionals/optionals.component';
+import { CarrinhoComponent } from './modules/carrinho/carrinho.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +16,8 @@ import { SearchboxComponent } from './core/presentational/searchbox/searchbox.co
     ProductsComponent,
     SplashScreenComponent,
     RestaurantsComponent,
-    HeaderComponent,
-    SearchboxComponent
+    OptionalsComponent,
+    CarrinhoComponent
   ],
   imports: [
     RoutingModule,

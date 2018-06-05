@@ -1,0 +1,27 @@
+@import '~src/variables.scss';
+
+.content{
+  &__radio{
+    width:20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid $red;
+    margin: 20px 20px 0 10px;
+  }
+}
+.active{
+  background: $red;
+}
+
+.add-cart-button{
+  width: 100%;
+  background: $red;
+  min-height: 50px;
+  color:white;
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+}

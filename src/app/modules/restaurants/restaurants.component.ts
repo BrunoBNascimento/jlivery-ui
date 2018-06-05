@@ -6,8 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./restaurants.component.scss']
 })
 export class RestaurantsComponent implements OnInit {
+  title: String;
+  restaurants: any[];
 
-  constructor() { }
+  constructor() {
+    this.restaurants = [
+      {
+        name: 'Outback',
+        desc: 'uma descrição'
+      }
+    ];
+
+    this.title = 'Restaurantes';
+  }
 
   ngOnInit() {
   }

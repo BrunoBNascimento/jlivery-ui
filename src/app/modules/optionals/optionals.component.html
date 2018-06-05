@@ -1,0 +1,20 @@
+<div class="header">
+  {{ title }}
+</div>
+<div class="searchBox">
+  <input type="text" class="searchBox__searchInput" placeholder="Pesquisar Opcionais...">
+</div>
+<div class="content">
+  <div class="content__card" *ngFor="let optional of optionals" (click)="this.flagCheckbox(optional.id)">
+    <div class="content__radio" [class.active]="!!this.selecteds.includes(optional.id)"></div>
+    <div class="card__content">
+      <h5>{{ optional.name }}</h5>
+      <span class="card__price">
+        {{ optional.price }}
+      </span>
+    </div>
+  </div>
+  <button class="add-cart-button" routerLink="/products">
+    Adicionar ao carrinho
+  </button>
+</div>

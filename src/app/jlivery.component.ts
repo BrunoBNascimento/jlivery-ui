@@ -12,6 +12,6 @@ export class JliveryComponent {
   title = 'app';
 
   getPage(outlet) {
-    return outlet.activatedRouteData['page'] || 'products';
+    return outlet.activatedRouteData['page'] || 'splashscreen';
   }
 }
