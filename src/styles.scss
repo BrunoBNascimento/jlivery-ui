@@ -99,3 +99,15 @@ body::selection{
     outline: none;
   }
 }
+
+.cart-button{
+  width: 100%;
+  background: $red;
+  min-height: 50px;
+  color:white;
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+}

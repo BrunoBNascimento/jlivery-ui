@@ -30,6 +30,7 @@ export class OptionalsComponent implements OnInit {
 
   flagCheckbox(id) {
     this.selecteds.push(id);
+    localStorage.setItem('hasCart', 'true');
   }
 
 }

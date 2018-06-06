@@ -9,6 +9,8 @@ import { SplashScreenComponent } from './core/presentational/splashscreen';
 import { RestaurantsComponent } from './modules/restaurants/restaurants.component';
 import { OptionalsComponent } from './modules/optionals/optionals.component';
 import { CarrinhoComponent } from './modules/carrinho/carrinho.component';
+import { LoginComponent } from './modules/login/login.component';
+import { CheckoutComponent } from './modules/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CarrinhoComponent } from './modules/carrinho/carrinho.component';
     SplashScreenComponent,
     RestaurantsComponent,
     OptionalsComponent,
-    CarrinhoComponent
+    CarrinhoComponent,
+    LoginComponent,
+    CheckoutComponent,
   ],
   imports: [
     RoutingModule,

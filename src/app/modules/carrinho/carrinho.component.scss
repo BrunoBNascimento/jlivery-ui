@@ -1,0 +1,36 @@
+@import '~src/variables.scss';
+
+.page-sub-title{
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sub-price{
+  color: green;
+  font-size:12px;
+  padding: 0 0 0 10px;
+  text-align: right;
+}
+
+.content{
+  &__item{
+    height:100px;
+    padding: 20px 10px 10px 10px;
+    border-bottom: $light-gray 1px solid;
+    h1{
+      font-size:20px;
+    }
+    h2{
+      font-size:15px;
+      color:gray;
+    }
+  }
+  .price, .total{
+    display:block;
+    width:100%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+  }
+}

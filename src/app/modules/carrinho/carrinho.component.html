@@ -1,3 +1,15 @@
-<p>
-  carrinho works!
-</p>
+<div class="header">
+  {{ title }}
+</div>
+<div class="content">
+  <h1 class="page-sub-title">Verifique o seu pedido:</h1>
+  <section class="content__item">
+    <h1>Costelinha barbecue <span class="sub-price">R$ 59,90</span></h1>
+    <h2>Molho apimentado <span class="sub-price">R$ 5,00</span></h2>
+  </section>
+  <span class="price">SubTotal <span class="sub-price">R$ 63,90</span></span>
+  <span class="total">Total <span class="sub-price">R$ 63,90</span></span>
+  <button class="cart-button" routerLink="/login">
+    Checkout
+  </button>
+</div>
